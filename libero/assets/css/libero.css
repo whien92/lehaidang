@@ -3,19 +3,174 @@
 	padding: 0;
 }
 
+.wrapper {
+	width: 1366px !important;
+	/*background-color: #fffdfd;*/
+	margin: auto;
+}
+
 .hdnav {
 	height: 70px;
+	padding: 0px;
+	margin: 0px;
+	background-color: black !important;
 }
 
 .navbar-dark .navbar-nav.hdmenu .nav-link {
-	font-family: hd-robotoregular !important;
-	font-size: 19px;
+	padding: 0;
+	font-family: hd-robotolight;
+	font-size: 16px;
 	color: white;
 }
 
 .row-in-nav {
 	width: 100%;
+	height: 100%;  
+	padding: 0px;
+	margin: 0px;
+	/*font-size: 18px;
+	font-family: hd-robotothin !important;*/
 }
+
+.row-in-nav .col-in-row {
+	padding: 0px;
+	margin: 0px;
+}
+
+nav .nav-content {
+	width: 100%;
+	height: 100%;
+
+}
+
+nav .nav-content .container-fluid {
+	width: 100%;
+	height: 45px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 10px;
+}
+
+.slider .carousel-inner .carousel-item img {
+	/*width: 1366px !important;
+	height: 772px !important;*/
+}
+
+.slider #carouselExampleIndicators .carousel-indicators li {
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	margin-right: 40px;
+}
+
+.slider #carouselExampleIndicators .carousel-indicators li:nth-child(3) {
+	margin-right: 0;
+}
+
+.slider #carouselExampleIndicators .carousel-indicators li.active {
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+.hd-jumbotron {
+	width: 100%;
+	height: 683px;
+}
+
+.hd-jumbotron .container {
+	width: 100%;
+	height: 100%;
+}
+
+.hd-jumbotron  h1 {
+	padding-top: 93px;
+	margin-bottom: 35px;
+    font-family: hd-robotobold;
+    font-size: 43px;
+}
+
+.hd-jumbotron  .jumbo-content {
+	position: relative;
+	padding-left: 120px;
+    padding-right: 120px;
+}
+
+.hd-jumbotron .jumbo-content .jumbotron-text {
+	border: 1px solid gray;
+    padding: 60px;
+    font-family: hd-robotothin;
+    font-size: 39px;
+    position: relative;
+    top: 69px;
+    left: 0;
+    z-index: 1;
+}
+
+.hd-jumbotron .jumbo-content .three-plus {
+	padding: 42px 54px;
+	font-size: 35px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    left: 39%;
+    z-index: 2;
+    background-color: white;
+    border-top: 1px solid black;;
+}
+
+.twobuttons {
+	width: 100%;
+	height: 482px;
+	background-image: url("../../assets/images/twobuttons-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.twobuttons img {
+	height: 100%;
+    width: 100%;
+	/*position: absolute;
+	top: 0;
+    left: 0%;
+    z-index: 1;*/
+}
+.twobuttons .container-fluid {
+	padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.twobuttons .container-fluid .row {
+	padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.twobuttons .tt-button {
+	width: 488px;
+    height: 130px;
+	background-color: black;
+    display: inline-block;
+    color: white;
+    line-height: 130px;
+    text-align: center;
+    font-family: hd-robotobold;
+    font-size: 38px;
+    text-decoration: none;
+}
+
+.twobuttons .ttnam {
+
+}
+
+.twobuttons .ttnu {
+
+}
+
 
 @media (max-width: 576px) {
 	*{}
@@ -31,7 +186,7 @@
 	}
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 	*{}
 
 	#navbarSupportedContent {
@@ -43,4 +198,48 @@
 		background: black;
 		text-align: center;
 	}
+
+	nav .nav-content .container-fluid {
+		display: none;
+	}
 } 
+
+@font-face {
+	src: url(../../assets/fonts/Cinzel-Bold.ttf);
+	font-family: hd-cinzel;
+}
+
+@font-face {
+	src: url(../../assets/fonts/MyriadPro-Regular.otf);
+	font-family: hd-myriad;
+}
+
+@font-face {
+	src: url(../../assets/fonts/Roboto-Black.ttf);
+	font-family: hd-robotoblack;
+}
+
+@font-face {
+	src: url(../../assets/fonts/Roboto-Bold.ttf);
+	font-family: hd-robotobold;
+}
+
+@font-face {
+	src: url(../../assets/fonts/Roboto-Light.ttf);
+	font-family: hd-robotolight;
+}
+
+@font-face {
+	src: url(../../assets/fonts/Roboto-Medium.ttf);
+	font-family: hd-robotomedium;
+}
+
+@font-face {
+	src: url(../../assets/fonts/Roboto-Regular.ttf);
+	font-family: hd-robotoregular;
+}
+
+@font-face {
+	src: url(../../assets/fonts/Roboto-Thin.ttf);
+	font-family: hd-robotothin;
+}
