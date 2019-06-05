@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.hdnav {
+	height: 70px;
+}
+
+.navbar-dark .navbar-nav.hdmenu .nav-link {
+	font-family: hd-robotoregular !important;
+	font-size: 19px;
+	color: white;
+}
+
+.row-in-nav {
+	width: 100%;
+}
+
+@media (max-width: 576px) {
+	*{}
+
+	#navbarSupportedContent {
+		width: 100%;
+		position: absolute;
+		z-index: 19;
+		top: 70px;
+		left: 0;
+		background: black;
+		text-align: center;
+	}
+} 
+
+@media (max-width: 768px) {
+	*{}
+
+	#navbarSupportedContent {
+		width: 100%;
+		position: absolute;
+		z-index: 19;
+		top: 70px;
+		left: 0;
+		background: black;
+		text-align: center;
+	}
+} 
