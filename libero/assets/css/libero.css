@@ -17,24 +17,31 @@
 }
 
 .navbar-dark .navbar-nav.hdmenu .nav-link {
+	width: 90px;
 	padding: 0;
-	font-family: hd-robotolight;
+	font-family: hd-robotoregular;
 	font-size: 16px;
 	color: white;
 }
 
+.navbar-dark .navbar-nav.hdmenu .nav-link:hover {
+	font-family: hd-robotobold;
+	color: #EDEDED;
+}
+
 .row-in-nav {
-	width: 100%;
-	height: 100%;  
+	width: 100%; 
 	padding: 0px;
 	margin: 0px;
-	/*font-size: 18px;
-	font-family: hd-robotothin !important;*/
 }
 
 .row-in-nav .col-in-row {
 	padding: 0px;
 	margin: 0px;
+}
+
+.row-in-nav .col-in-row h4{
+	font-family: hd-cinzel !important;
 }
 
 nav .nav-content {
@@ -48,7 +55,11 @@ nav .nav-content .container-fluid {
 	height: 45px;
 	padding-left: 32px;
 	padding-right: 32px;
-	padding-top: 10px;
+	padding-top: 12px;
+}
+
+nav .nav-content .searchbox {
+	display: none;
 }
 
 .slider .carousel-inner .carousel-item img {
@@ -163,6 +174,13 @@ nav .nav-content .container-fluid {
     text-decoration: none;
 }
 
+.twobuttons .tt-button:hover {
+    color: #EDEDED;
+    font-family: hd-robotobold;
+    /*text-decoration: underline;*/
+    border: 5px solid #EDEDED;
+}
+
 .twobuttons .ttnam {
 
 }
@@ -171,10 +189,16 @@ nav .nav-content .container-fluid {
 
 }
 
-.jewelry, .bags {
+.jewelry {
 	width: 100%;
 	height: 1002px;
-	background-color: red;/*#F2F2F2;*/
+	background-color: #F2F2F2;
+}
+
+.bags {
+	width: 100%;
+	height: 1002px;
+	background-color: #ededed;
 }
 
 .jewelry .container-fluid, .bags .container-fluid {
@@ -210,6 +234,14 @@ nav .nav-content .container-fluid {
 	width: 100%;
 }
 
+.d-image a {
+	color: black;
+}
+
+.d-image a:hover {
+	font-family: hd-robotobold !important;
+}
+
 .bags .container-fluid .d-image .sale {
 	width: 176px;
 	height: 176px;
@@ -230,15 +262,77 @@ nav .nav-content .container-fluid {
     transform: rotate(-30deg);
 }
 
+.mob-bag, .mob-btn {
+	display: none;
+}
+
 .jewelry .container-fluid .d-image .item-info p, .bags .container-fluid .d-image .item-info p{
 	font-family: hd-robotolight;
 	font-size: 25px;
 	margin: 0; 
 }
 
+.jewelry .container-fluid .d-image .item-info .infonecklace:hover{
+	font-family: hd-robotobold;
+}
+
 .one-image {
 	width: 100%;
 	height: 1002px;
+	position: relative;
+}
+
+.one-image .gocolection{
+	position: absolute;
+	z-index: 1;
+	display: inline-block;
+	font-family: hd-robotothin;
+	font-size: 30px;
+	color: black;
+}
+
+.one-image.sumspring-collection .gocolection{
+	top: 62%;
+	left: 55%;
+}
+
+.one-image .sportinfo{
+	width: 40%;
+	position: absolute;
+	bottom: 5%;
+	left: 30%;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.one-image .sportinfo a, .one-image .sportinfo p{
+	display: inline-block;
+	font-family: hd-robotolight;
+	font-size: 25px;
+	color: black;
+}
+
+#forhover {
+    display: flex;
+    flex-direction: column;
+}
+
+#forhover:hover > a {
+	font-family: hd-robotoregular;
+	text-decoration: underline;
+}
+
+
+.one-image .gocolection:hover{
+	font-family: hd-robotoregular;
+	text-decoration: none;
+	color: #3f3f3f;
+}
+
+.one-image.sport-collection .gocolection{
+	top: 67%;
+	left: 40%;
 }
 
 .one-image img{
@@ -255,9 +349,15 @@ footer .container-fluid {
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	padding: 75px 65px;
 	background: #282828;
 	color: #919191;
+}
+
+footer .container-fluid .row.lg-row{
+	margin: 0;
+	width: 100%;
+	height: 50%;
+	padding: 60px 55px
 }
 
 footer .container-fluid .brands {
@@ -277,46 +377,262 @@ footer .container-fluid .ourlinks a {
 	display: block;
 	font-size: 22px;
 	color: #919191;
+	margin-bottom: 5px;
+}
+
+footer .container-fluid .ourlinks a:hover {
+    font-family: hd-robotobold;
+}
+
+footer .mob-ourlinks {
+	display: none;
 }
 
 
-@media (max-width: 576px) {
-	*{}
-
-	#navbarSupportedContent {
-		width: 100%;
-		position: absolute;
-		z-index: 19;
-		top: 70px;
-		left: 0;
-		background: black;
-		text-align: center;
-	}
-} 
 
 @media (max-width: 992px) {
 	*{}
 
-	#navbarSupportedContent {
-		width: 100%;
-		position: absolute;
-		z-index: 19;
-		top: 70px;
-		left: 0;
-		background: black;
-		text-align: center;
+	.wrapper .hdnav {
+		height: 165px;
+		padding-top: 8px;
 	}
 
 	nav .nav-content .container-fluid {
+		height: 100%;
+	}
+
+	nav .nav-content .container-fluid .searchbox input {
+	    height: 40px;
+	    border: none;
+	    padding: 0 20px;
+	    font-size: 26px;
+	    font-family: hd-robotolight;
+	}
+
+	nav .nav-content .container-fluid .row{
+		justify-content: center;
+	    text-align: center;
+	    flex-wrap: nowrap;
+	}
+
+	nav .nav-content .container-fluid .row .col-in-row h4 {
+		font-size: 44px;
+	}
+
+	nav .nav-content .container-fluid .row .col-in-row button {
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+
+	nav .nav-content .container-fluid .row .col-in-row span {
+		font-size: 37px;
+	}
+
+	nav .nav-content .container-fluid .row .col-in-row .searchicon {
 		display: none;
+	}
+
+	.navbar-dark .navbar-toggler {
+	   
+	}
+
+	.navbar-collapse {
+        position: absolute;
+        top: 85px;
+        right: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 50%;
+        transition: all 2s ease;
+        display: block;
+        z-index: 19;
+		background: black;
+		text-align: center;
+    }
+
+    .navbar-collapse.show {
+        right: 50%;
+    }
+
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-right: 50%;
+        transition: all 0.3s ease;
+        display: block;
+    }
+
+    .navbar-dark .navbar-nav.hdmenu {
+	    line-height: 50px;
+	}
+
+    .navbar-dark .navbar-nav.hdmenu .nav-item .nav-link {
+	    height: 50px;
+	    width: 90px;
+	    font-size: 23px;
+	}
+
+	.navbar-dark .navbar-nav.hdmenu .nav-item .nav-link:hover {
+	    font-family: hd-robotobold !important;
+	}
+
+	nav .nav-content .container-fluid {
+		
 	}
 
 	.jewelry .container-fluid .d-earrings  {
 		display: none;
 	}
 
+	.mob-necklace {
+		display: none;
+	}
+
+	.mobjewelry {
+	    position: relative;
+	}
+
+	.jewelry .container-fluid .d-image .item-info {
+	    bottom: 174px;
+	}
+
 	.bags .container-fluid .d-wallet  {
 		display: none;
+	}
+
+	.twobags {
+		display: none;
+	}
+
+	.mob-bag {
+		display: flex;
+		position: relative;
+		justify-content: space-around;
+	    align-items: flex-end;
+	    padding-bottom: 36px;
+	}
+
+	a.mob-btn {
+		width: 35%;
+	    height: 100px;
+	    display: inline-block;
+	    position: absolute;
+	    bottom: 45px; 
+	    font-family: hd-robotomedium;
+	    font-size: 30px;
+	    color: black;
+	    text-align: center;
+		background: white;
+	    line-height: 100px;
+	    border: 1px solid black; 
+	}
+
+	a.mob-btn.godetails {
+	    left: 10%;
+	}
+
+	a.mob-btn.addcart {
+	    right: 10%;
+	}
+
+	.bags .container-fluid .d-image .sale {
+	    bottom: 50%;
+	}
+
+	.container-fluid .mob-bag .d-image .item-info {
+	    bottom: 250px;
+	}
+
+	.container-fluid .mob-bag .d-image .item-info h3{
+	    font-family: hd-robotolight;
+    	font-size: 25px
+	}
+
+	nav .nav-content .searchbox {
+		display: inline-block;
+		position: relative;
+	}
+
+	nav .nav-content .searchbox img {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+	}
+
+	.has-search .form-control {
+	    padding-left: 2.375rem;
+	}
+
+	.has-search .form-control-feedback {
+	    position: absolute;
+	    z-index: 2;
+	    display: block;
+	    width: 2.375rem;
+	    height: 2.375rem;
+	    line-height: 2.375rem;
+	    text-align: center;
+	    pointer-events: none;
+	    color: #aaa;
+	}
+
+	.jewelry .container-fluid .row, .jewelry .container-fluid .d-image, .bags .container-fluid .row, .bags .container-fluid .d-image  {
+		justify-content: center;
+	}
+
+	#sportprice {
+		display: none !important;
+	}
+
+	.one-image .sportinfo{
+		bottom: 12%;
+	}
+
+	footer .ourlinks {
+		display: none;
+	}
+
+	footer .mob-ourlinks {
+		display: flex;
+	}
+
+	footer .mob-ourlinks {
+		text-align: left;
+		margin: 0;
+	    padding: 0;	
+	}
+
+	footer .mob-ourlinks a{
+		display: inline-block;
+	    height: 75px;
+	    line-height: 75px;
+	    width: 100%;
+	    text-align: left;
+	    color: #919191;
+	    font-family: hd-robotolight;
+	    font-size: 30px;
+	}
+
+	footer .mob-ourlinks a:hover{
+	    font-family: hd-robotobold;
+	}
+
+	footer .mob-ourlinks .container-fluid {
+		margin: 0;
+		padding: 0;
+	}     
+
+	footer .mob-ourlinks .container-fluid .row {
+		border-top: solid 1px #919191;
+	}  
+
+	footer .container-fluid {
+	    padding: 28px 65px;
+	}
+
+	footer .container-fluid .brands {
+	    margin-top: 30px;
 	}
 } 
 
