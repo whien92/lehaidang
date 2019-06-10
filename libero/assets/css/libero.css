@@ -233,6 +233,16 @@ nav .nav-content .searchbox {
 	left: 0;
 	width: 100%;
 }
+ 
+.jewelry .container-fluid .d-image .item-info h3{
+	font-family: hd-robotobold;
+	font-size: 25px;
+}
+
+.bags .container-fluid .d-image .item-info h3{
+	font-family: hd-robotolight;
+	font-size: 25px;
+}
 
 .d-image a {
 	color: black;
